@@ -37,11 +37,11 @@ def main(argv):
     try:
         opts, args = getopt.getopt(argv, "hn:u:", ["name=", "url="])
     except getopt.GetoptError:
-        print('PyLookUpa.py -n <name> -h <url>')
+        print('PyRecon.py -n <name> -h <url>')
         sys.exit(2)
     for opt, arg in opts:
         if opt == '-h':
-            print('PyLookUpa.py -n <name> -h <url>')
+            print('PyRecon.py -n <name> -h <url>')
             sys.exit(2)
         elif opt in ("-n", "--name"):
             name = arg
